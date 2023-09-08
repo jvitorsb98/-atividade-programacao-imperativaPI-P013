@@ -153,19 +153,3 @@ Passageiro cadastraPassageiro(){
 
     return passageiro;
 }
-
-
-string obterNomePassageiro(Viagem &viagem, int assento) {
-
-    if (!validaAssento(assento)) {
-        cout << "Assento inválido " << endl;
-        return "O Assento" + to_string(assento) + " não é válido";
-    }
-
-    for (auto it = viagem.passagensVendidas.begin(); it != viagem.passagensVendidas.end(); ++it) {
-        if (it->assento == assento) {
-            return it->passageiro.nome;
-        }
-    }
-    return "O Assento " + to_string(assento) + " está vazio";
-}

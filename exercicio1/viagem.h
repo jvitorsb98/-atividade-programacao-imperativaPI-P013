@@ -20,7 +20,6 @@ bool venderPassagem(Viagem &viagem, int assento, Passageiro passageiro);
 string buscaHorario(int onibus);
 int solicitaAssento();
 Passageiro cadastraPassageiro();
-string obterNomePassageiro(Viagem &viagem, int assento);
 
 
 #endif 
